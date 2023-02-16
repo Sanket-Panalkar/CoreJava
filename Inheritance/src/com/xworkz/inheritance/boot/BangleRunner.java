@@ -40,7 +40,7 @@ public class BangleRunner {
 			System.err.println("bangle3 is not instance of GoldBangle");
 		}
 
-	}   		
+	}		
 		
 }
 
