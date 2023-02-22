@@ -8,11 +8,13 @@ public class PaintRunner {
 
 		Paint paint = new Paint();
 		System.out.println("paint instance of Paint --------");
+		System.out.println(paint.toString());
 		paint.setBrand("JSW");
 		paint.setColor("Blue");
 		paint.setDryingTime(2);
 		paint.setPrice(250.0d);
 		paint.toString();
+		
 		System.out.println(paint.toString());
 		System.out.println(paint.hashCode());
 		paint.equals(paint);
@@ -20,7 +22,7 @@ public class PaintRunner {
 
 		Paint paint1 = new Paint();
 		System.out.println("paint1 instance of Paint --------");
-		System.out.println(paint1.toString());
+		System.out.println(paint1);
 		paint1.setBrand("AsianPaints");
 		paint1.setColor("Red");
 		paint1.setDryingTime(6);

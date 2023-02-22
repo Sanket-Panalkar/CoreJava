@@ -27,7 +27,7 @@ public class Paint {
 		this.price = price;
 	}
 
-	@Override
+	//@Override
 	public String toString() {
 		System.out.println("toString() in Paint\n--------------------");
 		return " brand: " + brand + "\n color: " + color + "\n price: " + price + "\n dryingTime: " + dryingTime;
