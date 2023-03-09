@@ -34,5 +34,6 @@ public class FootWare {
 
 		return super.equals(obj);
 	}
+	
 
 }

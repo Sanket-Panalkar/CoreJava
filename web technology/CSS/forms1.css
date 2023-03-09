@@ -1,0 +1,30 @@
+    #Address{
+                padding-bottom: 50px;
+                padding-right: 60px;
+            }
+            p{
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+                border: 1px solid black;
+                /* padding: 5px; */
+                margin-left: 558px;
+                margin-right: 455px;
+                background-color: rgb(183, 221, 221);
+                font-size: 20px;
+                font-weight: bold;
+                color: rgb(38, 38, 137);
+            }
+            #data{
+                margin-left: 460px;
+                border: 1px solid black;
+                padding: 25px;
+                margin-right: 360px;
+                background-color: rgb(214, 186, 241);
+            }
+            body{
+                background-color: rgb(236, 245, 205);
+            }
+            #button{
+                margin-left: 460px; 
+                margin-top: 1px; 
+            } 
