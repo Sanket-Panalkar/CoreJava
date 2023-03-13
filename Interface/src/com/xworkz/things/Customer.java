@@ -9,7 +9,7 @@ public class Customer implements EatingRule {
 		System.out.println("no arg constructor of Customer..");
 	}
 
-	@Override
+	@Override 
 	public boolean washedHands(String name) {
 		System.out.println("washedHands method in customer....");
 		this.name = name;

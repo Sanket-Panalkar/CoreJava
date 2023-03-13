@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(202, 204, 225);
+    
+}
+
+.formclass{
+    
+}
+
+#formCSS{
+    margin-left: 500px;
+    margin-top: 80px;
+    margin-right: 400px;
+}
+h1{
+    font-family: 'Segoe UI', Verdana, sans-serif    ;
+    color: rgb(28, 52, 171);
+    text-align: center;
+}
