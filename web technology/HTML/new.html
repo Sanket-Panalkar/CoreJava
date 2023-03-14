@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Registration Form</title>
+        <link rel="icon" type="image/x-icon" href="https://cdn.pixabay.com/photo/2016/12/27/13/10/logo-1933884__340.png">
+        <link rel="stylesheet" href="../CSS/new.css">
+        <script src="../JS/new.js"></script>
+
+    </head>
+</html>
+<body id="newForm">
+    <form class="detail" name="newForm">
+        <h1  id="h1Id" onclick="changeH1()" onsubmit="formValidation()"><u>Student Registration Form</u></h1>
+        <div>
+            Name: <input type="text" id="name" name="name" required placeholder="Sanket Panalkar">
+        </div>
+        <br>
+        <div>
+            Gender: <input type="radio" id="gender" name="same">Male
+                    <input type="radio" name="same" id="gender">Female
+        </div>
+        <br>
+        <div>
+            DOB: <input type="date" name="dob" id="dob">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" id="email" name="email" required placeholder="Sanket@gmail.com">
+        </div>
+        <br>
+        <div>
+            Password: <input type="text" name="pass1" id="pass1">
+        </div>
+        <br>
+        <div>
+            Confirm Password: <input type="text" name="pass2" id="pass2">
+        </div>
+        <br>
+        <div>
+            Register Num: <input type="text" id="reg" name="reg" required>
+        </div>
+        <br>
+        <div>
+            Branch: <input type="text" name="branch" id="branch" required>
+        </div>
+        <br>
+        <div>
+            Mob no: <input type="text" id="numb" name="numb" required>
+        </div>
+        <br>
+        <div>
+            College: <input type="text" id="college" name="college" disabled value="BGMIT">
+        </div>
+        <br>
+        <div>
+            Address: <input type="text" id="add" name="add" disabled value="Rajaji Nagar">
+        </div>
+        <br>
+        <div>
+            Education:
+            <select>
+                <option>Select option</option>
+                <option>BE</option>
+                <option>M.Tech</option>
+                <option>BSE</option>
+                <option>B.Com</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <span>Skills:</span><br>
+            <input type="checkbox" id="check0" value="1">core Java<br>
+            <input type="checkbox" id="check1" value="2">Pyython<br>
+            <input type="checkbox" id="check2" value="3">HTML<br>
+            <input type="checkbox" id="check3" value="4">SQL
+        </div>
+        <br>
+        <div>
+            <span>Select Below option:</span><br>
+            <input type="radio" id="yes" name="s" value="Yes">Yes
+            <input type="radio" id="No" name="s" value="No">No
+        </div>
+        <br>
+        <div>
+            <span>
+            <button type="submit" id="submit" onclick="formValidation()">Submit</button>
+            <button type="reset" id="clear">Clear</button>
+        </span>
+        </div>
+        <br>
+    </form>
+</body>
