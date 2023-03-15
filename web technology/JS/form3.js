@@ -13,6 +13,12 @@ function Validation(){
     console.log("conform password>>", password2);
     console.log("Mobile No:>>",phonenum);
 
+
+    if(contNo.length != 10){
+        document.getElementById('phone1').innerHTML='*Please enter 10 digits';
+        return false;
+    }
+    
     if(isNaN(phonenum) || phonenum.length>10 && phonenum.length<20){
         alert('mobile number is valid and in between 10 and 20');
     }else{
@@ -31,4 +37,6 @@ function Validation(){
     }else{
         alert('password doesnt matchs');
     }
+
+
 }
