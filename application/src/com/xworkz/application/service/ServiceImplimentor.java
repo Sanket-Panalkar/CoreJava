@@ -121,9 +121,9 @@ public class ServiceImplimentor implements ApplicationService{
 		       else {
 		    	   System.out.println("ram is in valid..");
 		       }
-		       if(internet > 0 && internet < 100) {
-		    	   
-		       }
+//		       if(internet > 0 && internet < 100) {
+//		         
+//		       }
 		return false;
 	}
 	

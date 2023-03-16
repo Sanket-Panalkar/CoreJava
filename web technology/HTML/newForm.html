@@ -9,10 +9,10 @@
     <script src="../JS/newForm.js"></script>
 </head>
 <body>
-    <form class="newFormClass" name="newFormName" onsubmit="formValidation()">
-        <div id="newFormId"><span style="color: blue;">*</span>
-            Name: <input type="text" name="nameName" placdeholder="sanket" required>
-            <span id="nameSpan" style="color: rgb(180, 48, 48);"></span>
+    <form class="newFormClass" name="newFormName" onsubmit="return formValidation()">
+        <div>
+            Name<span style="color: blue;">*</span>: <input type="text" name="nameName" placdeholder="sanket" required>
+            <span id="nameSpan" style="color: rgb(180, 48, 48);">hi</span>
         </div>
         <br>
         <button type="submit" value="submit">SUBMIT</button>

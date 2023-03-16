@@ -1,6 +1,13 @@
 .newFormClass{
-    background-color: aquamarine;
+    background-color: rgba(255, 133, 127, 0.101);
     background-position: center;
     padding: 15px;
     border: 2px solid black;
+    margin-top: 200px;
+    margin-left: 400px;
+    border-radius: 20px;
+    border-style: inset;
+}
+body{
+    background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-abstract-watercolor-background_23-2149001486.jpg?w=996&t=st=1678931956~exp=1678932556~hmac=b85b48144e37e951881dfa412e6d92e9dd4a665687134fe1c7a1e957eb7dccc2);
 }
