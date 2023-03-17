@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Today's Date</title>
+    <style>
+      /* CSS styling for button */
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Today's Date</h1>
+    <button onclick="showDate()">Show Date</button>
+    <p id="date"></p>
+    <script>
+      // JavaScript function to display today's date
+      function showDate() {
+        var today = new Date();
+        var date = today.toLocaleDateString();
+        document.getElementById("date").innerHTML = "Today's date is: " + date;
+      }
+    </script>
+  </body>
+</html>

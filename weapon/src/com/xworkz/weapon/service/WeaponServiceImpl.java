@@ -39,42 +39,42 @@ public class WeaponServiceImpl implements WeaponService {
 
 			if (id > 0 && id < 100) {
 				System.out.println("id is valid..");
-				validId=true;
+				validId = true;
 			} else {
 				System.err.println("id is not valid..");
 			}
 
 			if (name != null && !name.isEmpty() && name.length() > 1 && name.length() < 100) {
 				System.out.println("name is valid..");
-				validName=true;
+				validName = true;
 			} else {
 				System.err.println("name is not valid..");
 			}
 
 			if (type != null) {
 				System.out.println("type is valid..");
-				validType=true;
+				validType = true;
 			} else {
 				System.err.println("invalid typed..");
 			}
 
 			if (cost > 0 && cost < 100000) {
 				System.out.println("cost is valid..");
-				validCost=true;
+				validCost = true;
 			} else {
 				System.err.println("cost is invalid..");
 			}
 
 			if (material != null && !material.isEmpty() && material.length() > 3 && material.length() < 100) {
 				System.out.println("material is valid..");
-				validMaterial=true;
+				validMaterial = true;
 			} else {
 				System.err.println("material is invalid..");
 			}
 
 			if (madeBy != null && !madeBy.isEmpty() && madeBy.length() > 3 && madeBy.length() < 100) {
 				System.out.println("madeby is valid..");
-				validMadeBy=true;
+				validMadeBy = true;
 			} else {
 				System.err.println("madeBy is invalid..");
 			}
@@ -82,7 +82,7 @@ public class WeaponServiceImpl implements WeaponService {
 			if (manufacturedBy != null && !manufacturedBy.isEmpty() && manufacturedBy.length() > 3
 					&& manufacturedBy.length() < 100) {
 				System.out.println("manufacturedBy is valid..");
-				validManufacturedBy=true;
+				validManufacturedBy = true;
 			} else {
 				System.err.println("manufacturedBy is invalid..");
 			}
@@ -91,28 +91,28 @@ public class WeaponServiceImpl implements WeaponService {
 			LocalDate startDate = LocalDate.of(2021, 01, 01);
 			if (manufacturedYear != null && manufacturedYear.isEqual(today) && manufacturedYear.isAfter(startDate)) {
 				System.out.println("manufacturedYear is valid..");
-				validManufacturedYear=true;
+				validManufacturedYear = true;
 			} else {
 				System.err.println("manufacturedYear is invalid..");
 			}
 
 			if (usedBy != null && !usedBy.isEmpty() && usedBy.length() > 3 && usedBy.length() < 100) {
 				System.out.println("usedBy is valid..");
-				validUsedBy=true;
+				validUsedBy = true;
 			} else {
 				System.err.println("usedBy is invalid..");
 			}
 
 			if (weight > 0 && weight < 100) {
 				System.out.println("weight is valid..");
-				validWeight=true;
+				validWeight = true;
 			} else {
 				System.err.println("weight is invalid..");
 			}
 
 			if (usedFor != null && !usedFor.isEmpty() && usedFor.length() > 1 && usedFor.length() < 100) {
 				System.out.println("usedFor is valid..");
-				validUsedFor=true;
+				validUsedFor = true;
 			} else {
 				System.err.println("usedFor invalid..");
 			}
