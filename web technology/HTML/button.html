@@ -9,11 +9,21 @@
         function showDate(){
             var data = document.getElementById('btn').innerHTML=Date();
         }
+
+        const openYoutubeButton = document.getElementById('open-youtube-btn');
+
+openYoutubeButton.addEventListener('click', () => {
+  window.open('https://www.youtube.com', '_blank');
+});
     </script>
 </head>
 <body>
     <h1>CHECK DATE</h1>
 
     <button id="btn" onclick="showDate()">Click</button>
+    <br>
+    <button  id="button1" onclick="onclick()">youtube</button>
+    <br>
+    <button id="open-youtube-btn">Open YouTube</button>
 </body>
 </html>

@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Today's Date</title>
+    
+    <title>open youtube</title>
     <style>
       /* CSS styling for button */
       button {
-        padding: 10px 20px;
+
+        padding: 200px;
         font-size: 16px;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        cursor: pointer;
-        border-radius: 4px;
+        background-color: #f97d4ca2;
+        /* color: rgb(255, 255, 255); */
+        border: #ff0000;
+        /* cursor: pointer; */
+        border-radius: 50px;
+        margin-left: 800px;
+        height: 550px;
+        width: 200px;
+        align-items: center;
+
+      }
+      #button{
+        color: aliceblue;
+        font-size: 50px;
+        text-align: center;
+      }
+      body{
+        background-image: url('https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2022/11/kantara.jpg?fit=1280%2C720&ssl=1');
       }
     </style>
   </head>
   <body>
-    <h1>Today's Date</h1>
-    <button onclick="showDate()">Show Date</button>
-    <p id="date"></p>
+        <button id="button" onclick="doFunction()">VARAHA ROOPAM</button>
+
+    </div>
     <script>
       // JavaScript function to display today's date
-      function showDate() {
-        var today = new Date();
-        var date = today.toLocaleDateString();
-        document.getElementById("date").innerHTML = "Today's date is: " + date;
+      
+      function doFunction(){
+        window.open('https://www.youtube.com/watch?v=gH_RYRwVrVM'); 
+        
       }
     </script>
   </body>
