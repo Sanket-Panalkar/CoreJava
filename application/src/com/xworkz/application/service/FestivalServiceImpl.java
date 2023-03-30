@@ -7,18 +7,18 @@ import com.xworkz.application.exeception.InvalidFestivalException;
 import com.xworkz.application.repository.FestivalRepositoy;
 import com.xworkz.application.util.FestivalValidUtil;
 
-public class FestivalServiceImpl implements FestivalService{
-	
+public class FestivalServiceImpl implements FestivalService {
+
 	private FestivalRepositoy festivalRepositoy;
-	
+
 	public FestivalServiceImpl(FestivalRepositoy festivalRepositoy) {
-		this.festivalRepositoy=festivalRepositoy;
+		this.festivalRepositoy = festivalRepositoy;
 	}
-	
+
 	@Override
 	public boolean validateAndThenSave(FestivalDTO dto) throws InvalidFestivalException {
-		
-		if(dto!=null) {
+
+		if (dto != null) {
 			System.out.println("dto is not null, we can validate the properties..");
 			int id = dto.getId();
 			String name = dto.getName();
@@ -73,32 +73,34 @@ public class FestivalServiceImpl implements FestivalService{
 			} else {
 				System.err.println("Invalid GodName");
 			}
-			if (FestivalValidUtil.validFlag(validId,validName,validStartDate,validEndDate,validSweet,validGodName)) {
+			if (FestivalValidUtil.validFlag(validId, validName, validStartDate, validEndDate, validSweet,
+					validGodName)) {
 				System.out.println("Validation done saved");
-				boolean save=this.festivalRepositoy.save(dto);
-				return save;
-				
+				boolean exist = this.festivalRepositoy.isExist(dto);
+				if (!exist) {
+					boolean save = this.festivalRepositoy.save(dto);
+					System.out.println("dto is not same.. so save it.."+dto);
+					return save;
+				}
+				else {
+					System.err.println("dto is same so dont save it.."+dto);
+				}
+
 			} else {
-				
+
 				throw new InvalidFestivalException("string should not be null..");
 			}
 
-
-		}else {     
-		System.out.println("DTO is null so dont validate");
+		} else {
+			System.err.println("DTO is null so dont validate");
 		}
-		
+
 		return false;
 	}
+	@Override
+	public int count() {
+		// TODO Auto-generated method stub
+		return this.festivalRepositoy.getCount();
+	}
 
-	
-
-	
 }
-
-
-
-
-
-
-

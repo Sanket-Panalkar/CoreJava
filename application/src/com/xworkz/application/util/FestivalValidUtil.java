@@ -28,7 +28,6 @@ public class FestivalValidUtil {
 
 		for (int i = 0; i < flag.length; i++) {
 			boolean temp = flag[i];
-			
 
 			if (!temp) {
 				return false;

@@ -12,7 +12,7 @@ public class FestivalDTO {
 	private LocalDate endDate;
 	private String sweet;
 	private String godName;
-	
+
 	public FestivalDTO(int id, String name, LocalDate startDate, LocalDate endDate, String sweet, String godName) {
 		super();
 		this.id = id;
@@ -95,6 +95,5 @@ public class FestivalDTO {
 	public void setGodName(String godName) {
 		this.godName = godName;
 	}
-	
-	
+
 }
