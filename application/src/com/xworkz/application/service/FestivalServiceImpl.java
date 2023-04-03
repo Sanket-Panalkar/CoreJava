@@ -75,7 +75,7 @@ public class FestivalServiceImpl implements FestivalService {
 			}
 			if (FestivalValidUtil.validFlag(validId, validName, validStartDate, validEndDate, validSweet,
 					validGodName)) {
-				System.out.println("Validation done saved");
+				System.out.println("Validation done and saved");
 				boolean exist = this.festivalRepositoy.isExist(dto);
 				if (!exist) {
 					boolean save = this.festivalRepositoy.save(dto);

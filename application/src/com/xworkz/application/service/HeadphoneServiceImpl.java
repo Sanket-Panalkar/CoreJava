@@ -3,21 +3,23 @@ package com.xworkz.application.service;
 import java.time.LocalDate;
 
 
-import com.xworkz.application.constant.Brand;
+
+
+import com.xworkz.application.constant.Brand; 
 import com.xworkz.application.constant.Color;
 import com.xworkz.application.constant.TypeAndWeight;
 import com.xworkz.application.dto.HeadphoneDTO;
 
 public class HeadphoneServiceImpl implements HeadphoneService {
 
-	@Override 
+	@Override
 	public boolean validateAndSave(HeadphoneDTO dto) {
 
 		System.out.println("Running HeadphoneServiceImpl..." + dto);
 
 		if (dto != null) {
 			System.out.println("dto is not null, we can validate the properties...");
-
+			
 			Brand brand = dto.getBrand();
 			String modelNo = dto.getModelNo();
 			double price = dto.getPrice();
@@ -116,7 +118,7 @@ public class HeadphoneServiceImpl implements HeadphoneService {
 
 			if (validBrand && validModelNo && validPrice && validIsBass && validColor && validTypeAndWeight
 					&& validCustomerName && validInvoiceNo && validMfgDate && validWarrentyPeriod) {
-				System.out.println("Validation is done and saver..");
+				System.out.println("Validation is done and save..");
 				return true;
 			} else {
 				System.err.println("dto is not valid..");

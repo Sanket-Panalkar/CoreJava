@@ -9,5 +9,6 @@ public interface FestivalService {
 	
 	default int count() {
 		return 0;
+		
 	}
 }

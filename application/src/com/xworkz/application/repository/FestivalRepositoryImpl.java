@@ -2,6 +2,8 @@ package com.xworkz.application.repository;
 
 import com.xworkz.application.dto.FestivalDTO;
 
+
+
 import com.xworkz.application.exeception.FestivalMemoryFullExeception;
 
 public class FestivalRepositoryImpl implements FestivalRepositoy {
@@ -32,7 +34,7 @@ public class FestivalRepositoryImpl implements FestivalRepositoy {
 			for (int i = 0; i < this.valueIndex; i++) {
 				FestivalDTO temp = value[i];
 
-				if (temp.equals(dto)) {
+				if (temp.equals(dto)) {  
 					System.out.println("dto allredy exists..");
 					return true;
 				}
