@@ -1,5 +1,4 @@
 package com.xworkz.application.exeception;
-
 public class InvalidEducationException extends Exception {
 
 	public InvalidEducationException(String message) {
