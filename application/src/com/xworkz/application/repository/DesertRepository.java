@@ -2,7 +2,7 @@ package com.xworkz.application.repository;
 
 import com.xworkz.application.dto.DesertDTO;
 
-public interface DesertRepository {
+public interface DesertRepository {    
 	boolean save(DesertDTO dto);
 
 	default boolean isExist(DesertDTO dto) {
