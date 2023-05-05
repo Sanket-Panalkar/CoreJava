@@ -13,17 +13,25 @@ public class ChocolateRunner {
 	public static void main(String[] args) {
 		
 		try {
-			ChocolateDTO chocolateDTO = new ChocolateDTO("darymilk", 10, 35.0);
+			ChocolateDTO chocolateDTO1 = new ChocolateDTO("darymilk", 10, 35.0);
+			ChocolateDTO chocolateDTO2 = new ChocolateDTO("darymi", 10, 35.0);
+			
 			ChocolateRepository repository = new ChocolateRepositoryImpl();
 			ChololateService service = new ChocolateServiceImpl(repository);
-			boolean save1 = service.validateAndSave(chocolateDTO);
+			
+			
+			boolean save1 = service.validateAndSave(chocolateDTO1);
+			
 			System.out.println(save1);
+			System.out.println("====================================");
+			
+			
 			System.out.println("------------------------------------------------------");
 
-			ChocolateDTO chocolateDTO1 = new ChocolateDTO("kitkat", 20, 25.0);
-			boolean save2 = service.validateAndSave(chocolateDTO1);
-			System.out.println(save1);
-			System.out.println("------------------------------------------------------");
+			//ChocolateDTO chocolateDTO1 = new ChocolateDTO("kitkat", 20, 25.0);
+			boolean save2 = service.validateAndSave(chocolateDTO2);
+			System.out.println(save2);
+			System.out.println("===========================================");
 
 			ChocolateDTO chocolateDTO3 = new ChocolateDTO("catbary", 15, 30.00);
 			boolean save3 = service.validateAndSave(chocolateDTO3);

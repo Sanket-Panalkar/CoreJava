@@ -12,6 +12,8 @@ import lombok.ToString;
 public class Guide {
 
 	@Autowired
-	private String names;
-	
+	private String name;
+	@Autowired
+	private Security security;
+
 }

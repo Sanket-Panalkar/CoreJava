@@ -1,7 +1,6 @@
 package com.xworkz.app.boot;
 
 import java.util.stream.Stream;
-
 import org.springframework.context.ApplicationContext;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -56,7 +55,6 @@ public class SpringRunner {
 		System.out.println(spring.getBean(Barber.class));
 		Stream.of(spring.getBeanDefinitionNames()).forEach(e -> System.out.println(e));
 		System.out.println(spring.getBeanDefinitionCount());
-		
 		System.out.println("==========================================================");
 
 		System.out.println(spring.getBean(HairDryer.class));

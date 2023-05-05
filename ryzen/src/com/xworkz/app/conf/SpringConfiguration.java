@@ -1,7 +1,6 @@
 package com.xworkz.app.conf;
 
 import java.util.ArrayList;
-
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -537,7 +536,7 @@ public class SpringConfiguration {
 		return s;
 
 	}
-	
+
 	@Bean
 	public Set<String> namesw() {
 		Set<String> hs = new LinkedHashSet<String>();

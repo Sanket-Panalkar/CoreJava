@@ -15,5 +15,5 @@ public class Museum {
 	private String names;
 	
 	@Autowired
-	private EntryFrees fees;
+	private EntryFees fees;
 }

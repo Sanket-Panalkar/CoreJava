@@ -5,5 +5,7 @@ import com.xworkz.application.exeception.InvalidDataChocolateExeption;
 
 public interface ChololateService {
 
-	boolean validateAndSave(ChocolateDTO dto) throws InvalidDataChocolateExeption;
+	default boolean validateAndSave(ChocolateDTO dto) throws InvalidDataChocolateExeption{
+		return false;
+	}
 }

@@ -8,11 +8,6 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan("com.xworkz.app")
 public class MuseumConfiguration {
 
-	public MuseumConfiguration() {
-
-		System.out.println("Rinning No arg contructor in Spring conf---");
-	}
-
 	@Bean
 	public String name() {
 		System.out.println("running name in MuseumConf..");

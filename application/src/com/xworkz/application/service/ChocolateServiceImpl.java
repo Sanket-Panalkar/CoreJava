@@ -15,12 +15,15 @@ public class ChocolateServiceImpl implements ChololateService {
 
 	@Override
 	public boolean validateAndSave(ChocolateDTO dto) throws InvalidDataChocolateExeption {
+
 		System.out.println("Running validateAndSave method in ChololateServiceImpl" + dto);
 
 		if (dto != null) {
+
 			System.out.println("dto is not null so we cal validate the properties...");
 
 			// getting all properties....
+
 			String brand = dto.getBrand();
 			int price = dto.getPrice();
 			double weight = dto.getWeight();
@@ -59,11 +62,13 @@ public class ChocolateServiceImpl implements ChololateService {
 
 			if (ValidUtil.validFlag(validBrand, validPrice, validWeight)) {
 				System.out.println("Validation is done and Saved...");
-				boolean save = this.repository.save(dto);
-				return save;
+				if (!repository.isExist(dto)) {
+					boolean save = this.repository.save(dto);
+					return save;
 
-			} else {
-				System.err.println("dto is null so dont validate..!");
+				} else {
+					System.err.println("dto is null so dont validate..!");
+				}
 			}
 		}
 

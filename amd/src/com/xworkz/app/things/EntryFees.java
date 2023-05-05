@@ -9,9 +9,11 @@ import lombok.ToString;
 @Component
 @ToString
 @AllArgsConstructor
-public class EntryFrees {
+public class EntryFees {
 
 	@Autowired
 	private int fee;
+	
+	@Autowired
 	private SensorDoors doors;
 }

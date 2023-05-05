@@ -1,8 +1,9 @@
 package com.xworkz.application.dto;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class ChocolateDTO {
+public class ChocolateDTO implements Serializable{
 
 	private String brand;
 	private int price;
